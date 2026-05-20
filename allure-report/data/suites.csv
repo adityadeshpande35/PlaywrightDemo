@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sun May 17 19:43:32 IST 2026","Sun May 17 19:44:04 IST 2026","32463","","MoreValidations.spec.js","","","","@Web popup validation",""
+"passed","Sun May 17 19:44:05 IST 2026","Sun May 17 19:44:12 IST 2026","6089","","UIBasicstest.spec.js","","","","@Web UI Controls",""
+"passed","Sun May 17 19:44:30 IST 2026","Sun May 17 19:44:47 IST 2026","16779","","ClientAppPO.spec.js","","","","@Web Client app login for ADIDAS ORIGINAL",""
+"passed","Sun May 17 19:44:10 IST 2026","Sun May 17 19:44:28 IST 2026","17869","","ClientAppPO.spec.js","","","","@Web Client app login for iphone 13 pro",""
+"passed","Sun May 17 19:43:32 IST 2026","Sun May 17 19:44:00 IST 2026","28380","","UIBasicstest.spec.js","","","","@Web Browser context Playwright Test",""

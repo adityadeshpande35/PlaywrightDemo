@@ -1,0 +1,12 @@
+[
+  'ADIDAS ORIGINAL',
+  'ZARA COAT 3',
+  'iphone 13 pro',
+  'Laptop',
+  'Laptop',
+  'Laptop',
+  'Laptop',
+  'qwerty',
+  'qwerty'
+]
+ | 6a09cd43965c23b43b216c7c | 
