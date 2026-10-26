@@ -19,9 +19,11 @@
     "@cucumber/cucumber": "^12.9.0",
     "@playwright/test": "^1.60.0",
     "@types/node": "^25.5.0",
-    "allure-playwright": "^3.8.0"
+    "allure-playwright": "^3.8.0",
+    "reporting-labs": "^0.4.3"
   },
   "dependencies": {
+    "@playwright/cli": "^0.1.13",
     "exceljs": "^4.4.0"
   }
 }

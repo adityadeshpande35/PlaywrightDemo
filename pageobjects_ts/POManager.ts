@@ -4,11 +4,14 @@ import {DashboardPage} from './DashboardPage';
 import{CartPage} from './CartPage';
 import{OrdersReviewPage} from './OrdersReviewPage';
 import{OrdersHistoryPage} from './OrdersHistoryPage';
+import { Register } from '../utils_ts/Register';
+import { RegisterPage } from './RegisterPage';
 
 
 export class POManager
 {
     loginpage:LoginPage;
+    registarpage:RegisterPage;
     dashboardpage:DashboardPage
     cartpage:CartPage;
     ordersreviewpage:OrdersReviewPage;
@@ -22,8 +25,15 @@ export class POManager
         this.cartpage=new CartPage(this.page);
         this.ordersreviewpage=new OrdersReviewPage(this.page);
         this.ordersHistoryPage=new OrdersHistoryPage(this.page);
+        this.registarpage=new RegisterPage(this.page);
     }
 
+
+    getRegisterPage()
+    {
+
+        return this.registarpage;
+    }
 
     getLoginPage()
 {
@@ -49,4 +59,3 @@ getOrdersHistoryPage()
 
 }
 }
-module.exports={POManager};

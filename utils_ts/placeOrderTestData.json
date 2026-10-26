@@ -2,14 +2,22 @@
 [
     {
 
-    "username":"adityadeshpande2345@gmail.com",
-    "password":"DeshAdi1#",
+    "firstname":"Aditya",
+    "lastname":"Deshpande",
+    "phoneno":"7972195257",
+    "password":"DeshAdi1%",
+    "confirmpassword":"DeshAdi1%",
+    "occupation":"Student",
     "productName":"iphone 13 pro"  
 },
 
 {
-   "username":"akjkgls@gmail.com",
-   "password":"Cricket12%",
+    "firstname":"John",
+    "lastname":"Edwards",
+    "phoneno":"9876543210",
+    "password":"Cricket12%",
+    "confirmpassword":"Cricket12%",
+    "occupation":"Engineer",
    "productName":"ADIDAS ORIGINAL"
    
 

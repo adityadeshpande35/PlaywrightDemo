@@ -3,6 +3,8 @@ const{DashboardPage} = require('./DashboardPage');
 const{CartPage} = require('./CartPage');
 const{OrdersReviewPage} = require('./OrdersReviewPage');
 const{OrdersHistoryPage} = require('./OrdersHistoryPage');
+const{LoginPagePractise} = require('./LoginPagePractise');
+const{ShopPage} = require('./ShopPage');
 
 class POManager
 {
@@ -14,6 +16,8 @@ class POManager
         this.cartpage=new CartPage(this.page);
         this.ordersreviewpage=new OrdersReviewPage(this.page);
         this.ordersHistoryPage=new OrdersHistoryPage(this.page);
+        this.loginPagePractise = new LoginPagePractise(this.page);
+        this.shopPage = new ShopPage(this.page);
     }
 
 
@@ -39,6 +43,14 @@ getOrdersHistoryPage()
 {
     return this.ordersHistoryPage;
 
+}
+getLoginPagePractise()
+{
+    return this.loginPagePractise;
+}
+getShopPage()
+{
+    return this.shopPage;
 }
 }
 module.exports={POManager};

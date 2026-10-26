@@ -33,6 +33,14 @@ export class LoginPage
         
     }
 
+    async performInvalidLogin(username:string,password:string)
+    {
+        await this.userName.fill(username);
+        await this.password.fill(password);
+        await this.signInButton.click();
+        await expect(this.incorrectloginerrormsg).toHaveText("Invalid email or password");
+    }
+
     //p.flex-1.leading-snug
  
 

@@ -22,6 +22,7 @@ export class DashboardPage
     {
 
            await this.productsText.first().waitFor();
+           
             const titles=await this.productsText.allTextContents();
             console.log(titles);
             const count=await this.products.count();
@@ -46,4 +47,3 @@ export class DashboardPage
         await this.orders.click();
     }
 }
-module.exports={DashboardPage};

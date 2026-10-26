@@ -1,0 +1,50 @@
+[
+ {
+  "time": 1790261342516,
+  "duration": 51292.106,
+  "passed": 0,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 0,
+  "tests": {}
+ },
+ {
+  "time": 1791653939963,
+  "duration": 41276.125,
+  "passed": 2,
+  "failed": 0,
+  "flaky": 0,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "::tests/ClientAppPO.spec.ts::@Web Client app login for iphone 13 pro": [
+    "p",
+    20802
+   ],
+   "::tests/ClientAppPO.spec.ts::@Web Client app login for ADIDAS ORIGINAL": [
+    "p",
+    12658
+   ]
+  }
+ },
+ {
+  "time": 1791655666922,
+  "duration": 70881.867,
+  "passed": 1,
+  "failed": 0,
+  "flaky": 1,
+  "skipped": 0,
+  "total": 2,
+  "tests": {
+   "::tests/WebAPIPart2.spec.js::Client app login": [
+    "p",
+    10915
+   ],
+   "::tests/WebAPIPart2.spec.js::@API Test case 2": [
+    "k",
+    2206
+   ]
+  }
+ }
+]

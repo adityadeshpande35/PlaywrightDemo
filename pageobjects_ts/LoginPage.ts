@@ -6,6 +6,7 @@ export class LoginPage
     signInButton:Locator;
     userName:Locator;
     password:Locator;
+    Registerbtn:Locator;
 
     constructor(page:Page)
     {
@@ -13,6 +14,8 @@ export class LoginPage
         this.signInButton = page.locator("[value='Login']");
         this.userName=page.locator("#userEmail");
         this.password=page.locator("#userPassword");
+        this.Registerbtn=page.locator("a[href*='register']");
+
 
     }
 
@@ -29,5 +32,9 @@ export class LoginPage
     await this.page.waitForLoadState("networkidle");
    }
 
+   async NavigateToRegister()
+   {
+    await this.Registerbtn.click();
+   }
+
 }
-module.exports={LoginPage};

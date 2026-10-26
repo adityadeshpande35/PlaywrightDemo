@@ -36,4 +36,3 @@ export class CartPage
         return this.page.locator("h3:has-text('"+productName+"')");
     }
 }
-module.exports={CartPage};

@@ -25,5 +25,17 @@ export class eventDetailsPage
         this.eventSeats=this.page.locator("#seats");
     }
 
-    
+    async createNewEvent(eventtitle:string,eventdescription:string,eventcategory:string,eventcity:string,eventvenue:string,eventdate:string,eventprice:string,eventseats:string)
+    {
+        await this.eventTitle.fill(eventtitle);
+        await this.eventDescription.fill(eventdescription);
+        await this.eventCategory.selectOption(eventcategory);
+        await this.eventCity.fill(eventcity);
+        await this.eventvenue.fill(eventvenue);
+        await this.eventDate.fill(eventdate);
+        await this.eventPrice.fill(eventprice);
+        await this.eventSeats.fill(eventseats);
 }
+
+}
+module.exports={eventDetailsPage};

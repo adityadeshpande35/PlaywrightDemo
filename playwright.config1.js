@@ -2,6 +2,7 @@
 const { defineConfig, devices } = require('@playwright/test');
 const { worker } = require('node:cluster');
 const { permission } = require('node:process');
+import reportingLabs from './reporting-labs.config';
 
 
 /**
@@ -15,8 +16,11 @@ const config = ({
   expect:{
     timeout:5000
   },
-  reporter: 'html',
-
+  reporter: [
+    ['list'],
+    ['reporting-labs', reportingLabs],   // <- add this line
+  ]
+});
   projects:[
 
     {
@@ -50,5 +54,5 @@ const config = ({
 
   /* Configure projects for major browsers */
   
-});
+
 module.exports = config;

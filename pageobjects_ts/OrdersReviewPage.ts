@@ -94,4 +94,3 @@ async SubmitAndGetOrderId()
 }
 
 }
-module.exports={OrdersReviewPage};

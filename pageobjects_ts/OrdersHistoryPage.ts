@@ -87,4 +87,3 @@ export class OrdersHistoryPage
  }
     
 }
-module.exports={OrdersHistoryPage};
