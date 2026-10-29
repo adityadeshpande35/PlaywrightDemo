@@ -28,6 +28,7 @@ test("Playwright Test level timeouts", async ({page}) => {
     test.setTimeout(60000);
 
     const slowExpect=expect.configure({timeout:9000});
+    page.setDefaultTimeout(9000);
 
     await page.goto("https://rahulshettyacademy.com/angularpractice/");
     await page.getByLabel("Check me out if you Love IceCreams!").check();
@@ -38,9 +39,9 @@ test("Playwright Test level timeouts", async ({page}) => {
     await page.getByText("Success! The Form has been submitted successfully!.").isVisible();
 
     //5 seconds default timeout for expect assertions --{timeout:10000} Step level
-     await slowExpect("Success! The Form has been submitted successfully!.").toBeVisible({timeout:10_000});
+     await slowExpect("Success! The Form has been submitted successfully!.").toBeVisible();
 
-    await page.getByRole("link", {name: "Shop"}).click();
+    await page.getByRole("link", {name: "Shop"}).click({timeout:15000});
 
     await slowExpect(page.locator(".my-4").first()).toHaveText("Shop");
     await page.locator("app-card").filter({hasText: "Nokia Edge"}).getByRole("button").click();

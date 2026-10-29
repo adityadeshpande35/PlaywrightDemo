@@ -11,13 +11,15 @@ const config = ({
   testDir: './tests',
   workers:5,
   retries:2,
-  timeout:30000,
+  meout:30000,
   expect:{
     timeout:5000
   },
   reporter: 'html',
   
   use: {
+    actionTimeout:10*1000,
+    navigationTimeout:30*1000,
     browserName:'chromium',
     headless:true,
     screenshot:'on',
